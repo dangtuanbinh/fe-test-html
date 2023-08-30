@@ -1,0 +1,196 @@
+/* Bootstrap da set san 
+    box-sizing: border-box */
+body {
+  margin: 0;
+}
+/* Register Page */
+.register-page {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 1180px;
+
+  padding: 10px 0;
+
+  background-image: url("../images/BG.png");
+  background-position: center;
+}
+
+.content-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.content-top__slogan{
+    width: 100%;
+}
+
+.content-top__left {
+  width: 15%;
+
+  background: red;
+}
+
+.content-top__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 45%;
+
+  margin-left: 120px;
+}
+
+.content-top__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 20%;
+}
+
+.content-bottom {
+  width: 100%;
+}
+
+.content-bottom__note {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 5px;
+}
+
+.content-bottom__note__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content-top__mobile__info {
+  display: none;
+
+  width: 100%;
+}
+
+/* Side banner */
+.content-top__image {
+  width: 231px;
+  height: 703px;
+}
+
+/* Mobile Info */
+.mobile-info{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.mobile-info__left-icon{
+    position: absolute;
+    top: -290px;
+    left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-info__right-icon{
+    position: absolute;
+    top: -290px;
+    right: 10px;
+}
+
+/* Register Form */
+
+/* Contact toolbar */
+.contact-toolbar{
+    display: flex;
+    align-items: center;
+  
+    width: 280px;
+    
+    padding-right: 10px;
+}
+
+.contact-toolbar img{
+    width: 86px;
+    height: 86px;
+}
+
+/* Winner List */
+
+
+@media screen and (max-width: 657px) {
+  .register-page {
+  }
+
+  .content-top__mobile__info {
+    display: block;
+  }
+
+  .content {
+    justify-content: unset;
+
+    min-height: 1240px;
+
+    padding: 0;
+
+    background-image: url("../images//mobileBg.png");
+  }
+
+  .content-top__register-form {
+    display: none;
+  }
+
+  .content-top__left,
+  .content-top__right,
+  .content-bottom__jackpot {
+    display: none;
+  }
+
+  .content-top__center {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .content-top__slogan {
+    width: 588px;
+    height: 95px;
+  }
+
+  .content-top__logo {
+    width: 195px;
+    height: 195px;
+  }
+
+  .content-bottom__note__img__sum {
+    width: 600px;
+  }
+}

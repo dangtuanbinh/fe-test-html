@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fe test</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Library -->
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./CSS/INDEX.CSS" />
+  </head>
+
+  <body>
+    <div class="register-page">
+      <div class="content">
+        <div class="content-top">
+          <div class="content-top__left">
+            <img
+              className="content-top__image"
+              src="images/banner1.png"
+              alt=""
+            />
+          </div>
+
+          <div class="content-top__center">
+            <img class="content-top__logo" src="images/logo.png" alt="" />
+            <img class="content-top__slogan" src="images/slogan.png" alt="" />
+
+            <div class="content-top__mobile__info">
+              <div class="mobile-info">
+                <div class="mobile-info__left-icon">
+                  <img src="images/mobileFb.png" alt="" />
+                  <img src="images/mobileTele.png" alt="" />
+                </div>
+
+                <div class="mobile-info__right-icon">
+                  <img src="images/mobileChat.png" alt="" />
+                </div>
+
+                <img src="images/mobileAd.png" alt="" />
+                <img src="images/downloadButton.png" alt="" />
+                <img src="images/mobileNote.png" alt="" />
+                <img src="images/fire-wall.png" alt="" style="margin: 15px 0" />
+                <img
+                  src="images/fire-wall-btn.png"
+                  alt=""
+                  style="margin-bottom: 20px"
+                />
+              </div>
+            </div>
+
+            <div class="content-top__register__form">
+              <!-- <RegisterForm /> -->
+            </div>
+          </div>
+
+          <div class="content-top__right">
+            <div class="contact-toolbar">
+              <img src="images/fbIcon.png" alt="" />
+
+              <img src="images/liveChatIcon.png" alt="" style="width: 100px" />
+
+              <img src="images/teleIcon.png" alt="" />
+            </div>
+
+            <div class="winner-list-container" id="winner-list"></div>
+            <!-- <WinnerList data={WinnerMocks} /> -->
+          </div>
+        </div>
+
+        <div class="content-bottom">
+          <div class="content-bottom__jackpot">
+            <!-- <Jackpot data={GameMocks} /> -->
+          </div>
+
+          <div class="content-bottom__note">
+            <div class="content-bottom__note__img">
+              <img
+                class="content-bottom__note__img__sum"
+                src="images/bottomNote.png"
+                alt=""
+              />
+              <img src="images/viewMore.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Owl Library -->
+    <script src="./js/owl.carousel.min.js">
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+
+    <script src="/js/WinnerList.js"></script>
+  </body>
+</html>
