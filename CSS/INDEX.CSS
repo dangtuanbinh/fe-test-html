@@ -38,8 +38,8 @@ body {
   width: 100%;
 }
 
-.content-top__slogan{
-    width: 100%;
+.content-top__slogan {
+  width: 100%;
 }
 
 .content-top__left {
@@ -63,7 +63,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
 
-  width: 20%;
+  width: 22%;
 }
 
 .content-bottom {
@@ -100,51 +100,294 @@ body {
 }
 
 /* Mobile Info */
-.mobile-info{
-    position: relative;
+.mobile-info {
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    width: 100%;
+  width: 100%;
 }
 
-.mobile-info__left-icon{
-    position: absolute;
-    top: -290px;
-    left: 10px;
+.mobile-info__left-icon {
+  position: absolute;
+  top: -290px;
+  left: 10px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.mobile-info__right-icon{
-    position: absolute;
-    top: -290px;
-    right: 10px;
+.mobile-info__right-icon {
+  position: absolute;
+  top: -290px;
+  right: 10px;
 }
 
 /* Register Form */
+.register-form {
+  position: relative;
+  z-index: 10;
 
-/* Contact toolbar */
-.contact-toolbar{
-    display: flex;
-    align-items: center;
-  
-    width: 280px;
-    
-    padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 750px;
+  height: 445px;
+
+  background-image: url("../images/registerBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.contact-toolbar img{
-    width: 86px;
-    height: 86px;
+.register-form__floating-tag {
+    position: absolute;
+    top: 17px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 80px;
+
+    background-image: url("../images/registerFloatingLayer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-size: 24px;
+    font-family: "SFProDisplay";
+    color: rgb(255, 101, 17);
+    text-transform: uppercase;
+    line-height: 3.5;
+    font-weight: 700;
+  }
+
+  .register-form__user-input {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 506px;
+    height: 60px;
+
+    padding-right: 5px;
+
+    background-image: url("../images//inputLayer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+  }
+
+  .register-form input {
+    width: 450px;
+    height: 45px;
+
+    margin-bottom: 5px;
+
+    border-radius: 30px;
+
+    background: #000000;
+
+    font-size: 19px;
+    font-family: "SFProDisplay";
+    color: rgb(205, 204, 204);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .register-form input:focus{
+    outline: none;
+  }
+
+  .register-form input::placeholder{
+    font-size: 19px;
+    font-family: "SFProDisplay";
+    color: rgb(205, 204, 204);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .register-form input img {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+  }
+
+  .register-form__password-input {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 506px;
+    height: 60px;
+
+    padding-right: 5px;
+
+    background-image: url("../images/inputLayer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .register-form__capcha-input {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 506px;
+    height: 60px;
+
+    padding-right: 5px;
+
+    background-image: url("../images/inputLayer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .register-form__input-icon{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+
+    cursor: pointer;
+  }
+
+  .register-form__button {
+    position: absolute;
+    bottom: -40px;
+
+    cursor: pointer;
+  }
+
+  .register-form__note {
+    position: absolute;
+    bottom: -100px;
+
+    cursor: pointer;
+  }
+
+/* Contact toolbar */
+.contact-toolbar {
+  display: flex;
+  align-items: center;
+
+  width: 280px;
+
+  padding-right: 10px;
+}
+
+.contact-toolbar img {
+  width: 86px;
+  height: 86px;
 }
 
 /* Winner List */
+.winner-list {
+  display: flex;
+  flex-direction: column;
 
+  padding-right: 30px;
+  margin-top: 75px;
+
+  width: 100%;
+}
+
+.winner-list__item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 42px;
+
+  margin-bottom: 35px;
+}
+
+.winner-list__item img {
+  margin-right: 12px;
+}
+
+.winner-list__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 18px;
+  font-family: "SFProDisplay";
+  line-height: 1.2;
+  color: #dedada;
+}
+
+/* Jackpot */
+.jackpot {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.jackpot__left {
+  padding-left: 30px;
+}
+
+.jackpot__left img {
+  width: 130px;
+  height: 110px;
+
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+.jackpot__center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 160px;
+}
+
+.jackpot__center-floating {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+
+  width: 100%;
+}
+
+.jackpot__right {
+  padding-right: 30px;
+}
+
+.jackpot__right img {
+  width: 130px;
+  height: 110px;
+
+  margin-left: 12px;
+
+  cursor: pointer;
+}
 
 @media screen and (max-width: 657px) {
   .register-page {

@@ -65,7 +65,60 @@
             </div>
 
             <div class="content-top__register__form">
-              <!-- <RegisterForm /> -->
+              <div class="register-form">
+                <div class="register-form__floating-tag">
+                  <span>ĐĂNG KÝ NGAY</span>
+                </div>
+
+                <form>
+                  <div class="register-form__user-input">
+                    <img src="images/userIcon.png" alt="" />
+                    <input
+                      type="text"
+                      placeholder="Tên đăng nhập"
+                      autocomplete="new-user"
+                    />
+                  </div>
+
+                  <div class="register-form__password-input">
+                    <img src="images/clockIcon.png" alt="" />
+                    <input
+                      type="password"
+                      placeholder="Mật khẩu"
+                      autocomplete="new-password"
+                    />
+                    <div class="register-form__input-icon"></div>
+                  </div>
+
+                  <div class="register-form__password-input">
+                    <img src="images/clockIcon.png" alt="" />
+                    <input
+                      type="password"
+                      placeholder="Nhập lại mật khẩu"
+                    />
+                    <div class="register-form__input-icon"></div>
+                  </div>
+
+                  <div class="register-form__capcha-input">
+                    <img src="images/captchaIcon.png" alt="" />
+                    <input
+                      type="text"
+                      placeholder="Nhập Capcha"
+                    />
+                  </div>
+                </form>
+
+                <img
+                  class="register-form__button"
+                  src="images/registerButton.png"
+                  alt=""
+                />
+                <img
+                  class="register-form__note"
+                  src="images/registerNote.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
 
@@ -78,14 +131,101 @@
               <img src="images/teleIcon.png" alt="" />
             </div>
 
-            <div class="winner-list-container" id="winner-list"></div>
-            <!-- <WinnerList data={WinnerMocks} /> -->
+            <div class="winner-list">
+              <div class="winner-list__item">
+                <img src="images/userAva1.png" alt="" />
+                <div class="winner-list__item-text" style="color: #ffffff">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva2.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva3.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva4.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva5.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva6.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images//userAva7.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+
+              <div class="winner-list__item">
+                <img src="images/userAva8.png" alt="" />
+                <div class="winner-list__item-text">
+                  <span>coca12345678</span>
+                  <div>Vừa thắng 5.888.888 tại tài xỉu</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="content-bottom">
-          <div class="content-bottom__jackpot">
-            <!-- <Jackpot data={GameMocks} /> -->
+          <div class="jackpot">
+            <div class="jackpot__left">
+              <img src="images/game1.png" alt="" alt="" />
+
+              <img src="images/game2.png" alt="" alt="" />
+
+              <img src="images/game3.png" alt="" alt="" />
+            </div>
+
+            <img
+              class="jackpot__center-floating"
+              src="images/jackpot-title.png"
+              alt=""
+            />
+
+            <div class="jackpot__center">
+              <img src="images/jacpotImg.png" alt="" />
+            </div>
+
+            <div class="jackpot__right">
+              <img src="images/game4.png" alt="" alt="" />
+
+              <img src="images/game5.png" alt="" alt="" />
+
+              <img src="images/game6.png" alt="" alt="" />
+            </div>
           </div>
 
           <div class="content-bottom__note">
@@ -138,6 +278,6 @@
       })
     </script>
 
-    <script src="/js/WinnerList.js"></script>
+    <script src="js/WinnerList.js" type="module"></script>
   </body>
 </html>
